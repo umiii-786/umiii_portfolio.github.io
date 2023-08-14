@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="input_search">
+            <div class="images">
+                <img src="images/facebook logo.png" alt="facebook" class="img1">
+                <img src="images/Instagram-Icon.png" alt="insta" class="img2">
+            </div>
+            <input type="text" name="name" placeholder="search" />
+            <button class="sm-btn">search</button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li><h2>CODERS</h2></li>
+                <Li><a href="blog.html" target="_main">Blogs</a></Li>
+                <Li><a href="index.html">HOME</a></Li>
+                <Li><a href="about.html" target="_main">ABOUT US</a></Li>
+                <Li><a href="contact.html" target="_main">CONTACT US</a></Li>
+            </ul>
+        </div>
+        <div id="hamburgur" class="burgur">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="cross burgur">X</div>
+
+        <div class="main">
+            <div class="content">
+                <div class="intro">
+                    <h1 class="name heading">welcome to coder world:</h1>
+                    <h2 class="name">hi umiii jatt is here</h2>
+                    <P class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque ab optio
+                        dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni quaerat
+                        repellat?.</P>
+
+                    <div class="buttons margin">
+                        <button class="btn">DOWNLOAD CV</button>
+                        <button class="btn">CONTACT US</button>
+                    </div>
+                </div>
+
+
+
+                <div class="skills">
+                    <h3>SKILLS :</h3>
+                    <ul>
+                        <li>PYTHON</li>
+                        <div class="py"></div>
+                        <li>JAVA</li>
+                        <div class="java"></div>
+                        <li>HTML</li>
+                        <div class="ht"></div>
+                        <li>CSS</li>
+                        <div class="css"></div>
+                        <li>JAVASCRIPT</li>
+                        <div class="javasc"></div>
+                    </ul>
+
+
+
+                </div>
+            </div>
+            <div class="owner">
+                <img src="images/umiii.jpeg" alt="owner">
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <P class="para">copyright &copy; umiii123@gmail.com All right reserved</P>
+    </footer>
+</body>
+<script>
+    let hambg = document.getElementById('hamburgur');
+    let line = document.getElementsByClassName('line');
+    console.log(hambg);
+    hambg.addEventListener('click', show);
+    let navbar = document.getElementsByClassName('navbar');
+    let cross = document.getElementsByClassName('cross');
+
+
+    function show() {
+        navbar[0].style.transform = "translateX(0px)";
+        navbar[0].style.height = "130%";
+        line[0].style.display = "none";
+        line[1].style.display = "none";
+        line[2].style.display = "none";
+        cross[0].style.display = "block";
+        cross[0].style.left = "113px"
+    }
+
+    cross[0].addEventListener('click', remove);
+    function remove() {
+        navbar[0].style.transform = "translateX(-270px)";
+        line[0].style.display = "block";
+        line[1].style.display = "block";
+        line[2].style.display = "block";
+        cross[0].style.display = "none";
+
+    }
+</script>
+
+</html>

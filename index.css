@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Quattrocento+Sans:wght@700&family=Roboto+Mono:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 130vh;
+    display: flex;
+}
+
+.navbar {
+    transition: all 0.8s ease;
+    width: 170px;
+    height: 100%;
+    /* border: 1px solid red; */
+    background-color: #cd4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar ul {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-top: 55px;
+}
+
+.navbar ul li h2 {
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 1.6px;
+    margin-right: 10px;
+}
+
+.intro h1 {
+    /* text-align: center; */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.5rem;
+}
+
+.intro h2 {
+    /* text-align: center */
+    font-size: 2rem;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.navbar ul li a {
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    font-family: verdana;
+    text-decoration: none;
+    position: relative;
+    bottom: 0px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    transition: all 0.5s ease;
+    bottom: 10px;
+    text-decoration: underline;
+
+}
+
+.main {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.input_search {
+    display: flex;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.input_search input {
+    max-width: 200px;
+    font-size: 16px;
+    padding: 0px 10px;
+    border: 1px solid green;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.input_search img {
+    margin-left: 10px;
+}
+
+.images img {
+    width: 28px;
+}
+
+.sm-btn {
+    padding: 0px 5px;
+    margin-left: 5px;
+    background: none;
+    border: 1px solid red;
+    color: red;
+    border-radius: 5px;
+}
+
+.sm-btn:hover {
+    background-color: red;
+    color: white;
+}
+
+.burgur {
+    height: 47px;
+    width: 53px;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    color: black;
+    cursor: pointer;
+    display: none;
+
+}
+
+.line {
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    border: 1px solid black;
+    margin-top: 8px;
+}
+
+.cross {
+    /* transition: all 1s ease; */
+    font-size: 50px;
+    display: none;
+}
+
+.content {
+    max-width: 800px;
+    height: 600px;
+    margin-left: 40px;
+    /* border:1px solid red; */
+}
+
+.owner {
+    /* margin-right: 20px; */
+    width: 320px;
+    height: 560px;
+    border: 1px solid gray;
+}
+
+.owner img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.py {
+    max-width: 260px;
+    height: 8px;
+    background-color: yellow;
+    margin-bottom: 15px;
+}
+
+.java {
+    max-width: 180px;
+    height: 8px;
+    background-color: red;
+    margin-bottom: 15px;
+}
+
+.ht {
+    max-width: 280px;
+    height: 8px;
+    background-color: green;
+    margin-bottom: 15px;
+}
+
+.css {
+    max-width: 260px;
+    height: 8px;
+    background-color: green;
+    margin-bottom: 15px;
+}
+
+.javasc {
+    max-width: 250px;
+    height: 8px;
+    background-color: red;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    max-width: 300px;
+    margin-top: 15px;
+    /* border:2px solid black; */
+}
+
+.btn {
+    transition: all 0.5s;
+    padding: 4px 6px;
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: none;
+    color: green;
+}
+
+.intro {
+    min-height: 280px;
+    max-width: 100%;
+}
+
+.skills {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.skills h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.skills ul li {
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.name {
+    padding-top: 20px;
+    max-width: 600px;
+}
+
+.para {
+    padding: 5px 0px;
+    max-width: 600px;
+    padding-right: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+#footer {
+    color: white;
+    background-color: rgb(10 10 10 / 86%);
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer p {
+    padding: 0px 5px;
+    font-size: 16px;
+    margin-top: 4px;
+    max-width: 600px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width:0px) and (max-width:400px) {
+    .navbar {
+        position: absolute;
+        height: 100%;
+        transform: translateX(-207px);
+    }
+
+    .main {
+        width: 100%;
+        justify-content: unset;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .burgur {
+        display: block;
+        left: 50px;
+        top: 13px;
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .owner {
+        display: none;
+    }
+
+    .img1 {
+        position: absolute;
+        width: 28px;
+        top: -36px;
+        right: 0px;
+    }
+
+    .img2 {
+        position: absolute;
+        width: 28px;
+        top: -36px;
+        right: 40px;
+    }
+
+    .input_search {
+        z-index: -2;
+        top: 80px;
+        right: 5px;
+    }
+
+    .intro {
+        min-height: 340px;
+    }
+
+    .skills {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:700px) {
+    .navbar {
+        position: absolute;
+        height: 100%;
+        transform: translateX(-207px);
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .content {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .burgur {
+        display: block;
+        left: 50px;
+        top: 13px;
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .owner {
+        display: none;
+    }
+
+    .img1 {
+        position: absolute;
+        width: 28px;
+        top: -36px;
+        right: 0px;
+    }
+
+    .img2 {
+        position: absolute;
+        width: 28px;
+        top: -36px;
+        right: 40px;
+    }
+
+    .input_search {
+        z-index: -2;
+        top: 90px;
+        right: 5px;
+    }
+
+    .intro {
+        min-height: 290px;
+    }
+
+
+}
+
+@media only screen and (min-width:700px) and (max-width:950px) {
+    .navbar {
+        position: absolute;
+        height: 100%;
+        transform: translateX(-207px);
+    }
+
+    .burgur {
+        display: block;
+        left: 50px;
+        top: 13px;
+    }
+
+    .content {
+        /* height:100%; */
+        width: 100%;
+    }
+
+    .cross {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+}
